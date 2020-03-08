@@ -21,12 +21,22 @@ public class souled {
 		//obj.get(baseurl);
 		driver.navigate().to("https://www.thesouledstore.com/");
 	}
-	@Test (priority=0)
-	void clickonlogin()
+	@Test (priority=0) 
+	  void login() 
+	  {
+		  WebElement element;
+		  element=driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/nav/div[1]/div/ul/li[2]/span/span"));
+		  element.click();
+		  }
+	@Test (priority=1)
+	void search()
 	{
 		WebElement element;
 		element=driver.findElement(By.id("search"));
 		element.sendKeys("shirts");
 		
 	}
+	
+	  
+	 
 }
