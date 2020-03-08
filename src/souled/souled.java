@@ -10,42 +10,23 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 
 public class souled {
-
-	WebDriver obj;
+	WebDriver driver;
+	
 	@BeforeTest
 	void configure()
 	{
-		String baseurl="https://www.thesouledstore.com/";
-		System.setProperty("webdriver.gecko.driver", "G:\\study\\SEM 6\\Test Automation\\geckodriver-v0.26.0-win64\\geckodriver.exe");
-		obj=new FirefoxDriver();
-		obj.get(baseurl);
+		String baseurl="https://www.thesouledstore.com/";//driver.navigate().to("https://www.amazon.in/");
+		System.setProperty("webdriver.chrome.driver", "G:\\study\\SEM 6\\Test Automation\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		//obj.get(baseurl);
+		driver.navigate().to("https://www.thesouledstore.com/");
 	}
-	/*
-	 * @Test (priority=0) void clickonlogin() { WebElement element;
-	 * element=obj.findElement(By.id("nav-signin-tooltip")); element.click();
-	 * 
-	 * }
-	 * 
-	 * @Test (priority=1) void enteremail() { WebElement element;
-	 * element=obj.findElement(By.id("ap_email"));
-	 * element.sendKeys("prajjawalbanati16@gmail.com"); }
-	 * 
-	 * @Test (priority=2) void clickoncontinue() { WebElement element1; String name;
-	 * element1=obj.findElement(By.id("continue")); name=element1.getText();
-	 * //Assertion Statement AssertJUnit.assertTrue(name.contains("Continue"));
-	 * element1.click();
-	 * 
-	 * }
-	 * 
-	 * @Test (priority=3) void enterpassword() { WebElement element;
-	 * element=obj.findElement(By.id("ap_password"));
-	 * element.sendKeys("puneet321banati");
-	 * 
-	 * }
-	 * 
-	 * @Test (priority=4) void ClickOnLoginButton() { WebElement element1;
-	 * element1=obj.findElement(By.id("signInSubmit")); element1.click(); }
-	 * 
-	 * @AfterTest void QuitBrowser() { obj.quit(); }
-	 */
+	@Test (priority=0)
+	void clickonlogin()
+	{
+		WebElement element;
+		element=driver.findElement(By.id("search"));
+		element.sendKeys("shirts");
+		
+	}
 }
