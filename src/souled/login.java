@@ -18,8 +18,7 @@ public class login {
 		 System.setProperty("webdriver.chrome.driver", "G:\\study\\SEM 6\\Test Automation\\chromedriver_win32\\chromedriver.exe");
          WebDriver driver=new ChromeDriver();  
         driver.navigate().to("https://www.thesouledstore.com/");  
-      
-      WebElement element  = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/nav/div[1]/div/ul/li[2]/span/span")); 
+      WebElement element  = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/nav/div[1]/div/ul/li[2]/span/span"));//used xpath to login properly 
       element.click();
 	 }
 }
