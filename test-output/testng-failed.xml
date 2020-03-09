@@ -5,7 +5,7 @@
     <classes>
       <class name="souled.souled">
         <methods>
-          <include name="login_pass"/>
+          <include name="search"/>
           <include name="configure"/>
         </methods>
       </class> <!-- souled.souled -->

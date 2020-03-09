@@ -30,5 +30,8 @@ public class login {
       WebElement element4  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input"));
       element4.sendKeys("qwerty12");
       element4.submit();
+      driver.navigate().to("https://www.thesouledstore.com/");
+      WebElement element5  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/a"));
+      element5.click();
 	 }
 }

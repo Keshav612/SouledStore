@@ -33,6 +33,7 @@ public class souled {
 	  {
 		  WebElement element;
 		  element=driver.findElement(By.className("form-control"));
+		  element.sendKeys("mkeshav1206@gmail.com");
 		  element.submit(); 
 	  }
 	  //xpath("//*[@id=\"app\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input")
@@ -41,21 +42,32 @@ public class souled {
 	  {
 		  WebElement element;
 		  element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input"));
-		  element.click(); 
+		  element.sendKeys("qwerty12");
+		  element.submit(); 
 	  }
-	@Test (priority=3)
+	 @Test (priority=3)
 	void search()
 	{
 		WebElement element;
-		/*
-		 * element=driver.findElement(By.id("search")); element.sendKeys("shirts");
-		 * element.click();
-		 */
-		element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/a"));
+		
+		  element=driver.findElement(By.id("search")); 
+		  element.sendKeys("shirts");
+		  //element.click();
+		  WebElement element2  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/div[1]/div/ul/li[1]/div/div/div/span"));
+	      element2.click();
+		//element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/a"));
 		//element.sendKeys("shirts");
-		element.click();
-	}
+		//element.click();
+	} 
 	
-	  
-	 
+	/*@Test (priority=4)
+	void search2()
+	{
+		WebElement element;
+		element=driver.findElement(By.id("search"));
+		element.sendKeys("shirts");
+		
+	}
+	*/
+	   
 }
