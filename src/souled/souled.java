@@ -21,22 +21,39 @@ public class souled {
 		//obj.get(baseurl);
 		driver.navigate().to("https://www.thesouledstore.com/");
 	}
-
-	
-	  @Test (priority=0) void login() 
+	@Test (priority=0)
+	void login_btn() 
 	  {
 		  WebElement element;
 		  element=driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/nav/div[1]/div/ul/li[2]/span/span"));
 		  element.click(); 
 	  }
-	 
-	@Test (priority=1)
+	  @Test (priority=1) 
+	  void login() 
+	  {
+		  WebElement element;
+		  element=driver.findElement(By.className("form-control"));
+		  element.submit(); 
+	  }
+	  //xpath("//*[@id=\"app\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input")
+	  @Test (priority=2)
+	  void login_pass() 
+	  {
+		  WebElement element;
+		  element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input"));
+		  element.click(); 
+	  }
+	@Test (priority=3)
 	void search()
 	{
 		WebElement element;
-		element=driver.findElement(By.id("search"));
-		element.sendKeys("shirts");
-		
+		/*
+		 * element=driver.findElement(By.id("search")); element.sendKeys("shirts");
+		 * element.click();
+		 */
+		element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/a"));
+		//element.sendKeys("shirts");
+		element.click();
 	}
 	
 	  
