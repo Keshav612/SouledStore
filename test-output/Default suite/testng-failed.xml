@@ -5,7 +5,8 @@
     <classes>
       <class name="souled.souled">
         <methods>
-          <include name="select_item"/>
+          <include name="login_pass"/>
+          <include name="login"/>
           <include name="configure"/>
         </methods>
       </class> <!-- souled.souled -->

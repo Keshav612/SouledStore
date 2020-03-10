@@ -68,10 +68,36 @@ public class souled {
 	 }
 	 @Test (priority=5)
 
-	 void buy_now()
+	 void add_to_cart()
 	 {
 		 try{
 			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/button"));
+			 //Since, no exception, so element is present
+			 System.out.println("Element present");
+			}
+			catch(NoSuchElementException e){
+			 //Element is not present
+			 System.out.println("Element not present");
+			}
+	 }
+	 @Test (priority=6)
+	 void share()
+	 {
+		 try{
+			 driver.findElements(By.className("sharebtns f22"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+			 //Since, no exception, so element is present
+			 System.out.println("Element present");
+			}
+			catch(NoSuchElementException e){
+			 //Element is not present
+			 System.out.println("Element not present");
+			}
+	 }
+	 @Test (priority=7)
+	 void quantity()
+	 {
+		 try{
+			 driver.findElements(By.className("fltdiv lh28"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
 			 //Since, no exception, so element is present
 			 System.out.println("Element present");
 			}

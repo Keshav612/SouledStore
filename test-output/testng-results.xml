@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="269143" started-at="2020-03-10T16:22:35 IST" finished-at="2020-03-10T16:27:04 IST">
+  <suite name="Default suite" duration-ms="136884" started-at="2020-03-10T20:22:51 IST" finished-at="2020-03-10T20:25:08 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="269143" started-at="2020-03-10T16:22:35 IST" finished-at="2020-03-10T16:27:04 IST">
+    <test name="Default test" duration-ms="136884" started-at="2020-03-10T20:22:51 IST" finished-at="2020-03-10T20:25:08 IST">
       <class name="souled.souled">
-        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@3e9b1010]" name="configure" is-config="true" duration-ms="194262" started-at="2020-03-10T16:22:35 IST" finished-at="2020-03-10T16:25:49 IST">
+        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@6c3708b3]" name="configure" is-config="true" duration-ms="73032" started-at="2020-03-10T20:22:51 IST" finished-at="2020-03-10T20:24:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@3e9b1010]" name="login_btn" duration-ms="19877" started-at="2020-03-10T16:25:51 IST" finished-at="2020-03-10T16:26:11 IST">
+        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@6c3708b3]" name="login_btn" duration-ms="306" started-at="2020-03-10T20:24:04 IST" finished-at="2020-03-10T20:24:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_btn -->
-        <test-method status="PASS" signature="login()[pri:1, instance:souled.souled@3e9b1010]" name="login" duration-ms="3710" started-at="2020-03-10T16:26:12 IST" finished-at="2020-03-10T16:26:15 IST">
+        <test-method status="PASS" signature="login()[pri:1, instance:souled.souled@6c3708b3]" name="login" duration-ms="857" started-at="2020-03-10T20:24:05 IST" finished-at="2020-03-10T20:24:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="login_pass()[pri:2, instance:souled.souled@3e9b1010]" name="login_pass" duration-ms="1048" started-at="2020-03-10T16:26:15 IST" finished-at="2020-03-10T16:26:16 IST">
+        <test-method status="PASS" signature="login_pass()[pri:2, instance:souled.souled@6c3708b3]" name="login_pass" duration-ms="1048" started-at="2020-03-10T20:24:06 IST" finished-at="2020-03-10T20:24:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_pass -->
-        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@3e9b1010]" name="search" duration-ms="150" started-at="2020-03-10T16:26:16 IST" finished-at="2020-03-10T16:26:17 IST">
+        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@6c3708b3]" name="search" duration-ms="180" started-at="2020-03-10T20:24:07 IST" finished-at="2020-03-10T20:24:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@3e9b1010]" name="select_item" duration-ms="44627" started-at="2020-03-10T16:26:17 IST" finished-at="2020-03-10T16:27:01 IST">
+        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@6c3708b3]" name="select_item" duration-ms="60175" started-at="2020-03-10T20:24:07 IST" finished-at="2020-03-10T20:25:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_item -->
-        <test-method status="PASS" signature="buy_now()[pri:5, instance:souled.souled@3e9b1010]" name="buy_now" duration-ms="2660" started-at="2020-03-10T16:27:01 IST" finished-at="2020-03-10T16:27:04 IST">
+        <test-method status="PASS" signature="add_to_cart()[pri:5, instance:souled.souled@6c3708b3]" name="add_to_cart" duration-ms="154" started-at="2020-03-10T20:25:07 IST" finished-at="2020-03-10T20:25:07 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- buy_now -->
+        </test-method> <!-- add_to_cart -->
+        <test-method status="PASS" signature="share()[pri:6, instance:souled.souled@6c3708b3]" name="share" duration-ms="88" started-at="2020-03-10T20:25:07 IST" finished-at="2020-03-10T20:25:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- share -->
+        <test-method status="PASS" signature="quantity()[pri:7, instance:souled.souled@6c3708b3]" name="quantity" duration-ms="805" started-at="2020-03-10T20:25:07 IST" finished-at="2020-03-10T20:25:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quantity -->
       </class> <!-- souled.souled -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
