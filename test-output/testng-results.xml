@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56824" started-at="2020-03-10T02:49:19 IST" finished-at="2020-03-10T02:50:16 IST">
+  <suite name="Default suite" duration-ms="269143" started-at="2020-03-10T16:22:35 IST" finished-at="2020-03-10T16:27:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56824" started-at="2020-03-10T02:49:19 IST" finished-at="2020-03-10T02:50:16 IST">
+    <test name="Default test" duration-ms="269143" started-at="2020-03-10T16:22:35 IST" finished-at="2020-03-10T16:27:04 IST">
       <class name="souled.souled">
-        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@3e9b1010]" name="configure" is-config="true" duration-ms="44900" started-at="2020-03-10T02:49:19 IST" finished-at="2020-03-10T02:50:04 IST">
+        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@3e9b1010]" name="configure" is-config="true" duration-ms="194262" started-at="2020-03-10T16:22:35 IST" finished-at="2020-03-10T16:25:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@3e9b1010]" name="login_btn" duration-ms="1496" started-at="2020-03-10T02:50:05 IST" finished-at="2020-03-10T02:50:06 IST">
+        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@3e9b1010]" name="login_btn" duration-ms="19877" started-at="2020-03-10T16:25:51 IST" finished-at="2020-03-10T16:26:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_btn -->
-        <test-method status="PASS" signature="login()[pri:1, instance:souled.souled@3e9b1010]" name="login" duration-ms="4054" started-at="2020-03-10T02:50:07 IST" finished-at="2020-03-10T02:50:11 IST">
+        <test-method status="PASS" signature="login()[pri:1, instance:souled.souled@3e9b1010]" name="login" duration-ms="3710" started-at="2020-03-10T16:26:12 IST" finished-at="2020-03-10T16:26:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="login_pass()[pri:2, instance:souled.souled@3e9b1010]" name="login_pass" duration-ms="196" started-at="2020-03-10T02:50:11 IST" finished-at="2020-03-10T02:50:11 IST">
+        <test-method status="PASS" signature="login_pass()[pri:2, instance:souled.souled@3e9b1010]" name="login_pass" duration-ms="1048" started-at="2020-03-10T16:26:15 IST" finished-at="2020-03-10T16:26:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_pass -->
-        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@3e9b1010]" name="search" duration-ms="5305" started-at="2020-03-10T02:50:11 IST" finished-at="2020-03-10T02:50:16 IST">
+        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@3e9b1010]" name="search" duration-ms="150" started-at="2020-03-10T16:26:16 IST" finished-at="2020-03-10T16:26:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
+        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@3e9b1010]" name="select_item" duration-ms="44627" started-at="2020-03-10T16:26:17 IST" finished-at="2020-03-10T16:27:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_item -->
+        <test-method status="PASS" signature="buy_now()[pri:5, instance:souled.souled@3e9b1010]" name="buy_now" duration-ms="2660" started-at="2020-03-10T16:27:01 IST" finished-at="2020-03-10T16:27:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buy_now -->
       </class> <!-- souled.souled -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -2,13 +2,15 @@ package souled;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.*;
+
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
-
 public class souled {
 	WebDriver driver;
 	
@@ -51,23 +53,31 @@ public class souled {
 		WebElement element;
 		
 		  element=driver.findElement(By.id("search")); 
-		  element.sendKeys("shirts");
-		  //element.click();
-		  WebElement element2  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/div[1]/div/ul/li[1]/div/div/div/span"));
-	      element2.click();
-		//element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/a"));
-		//element.sendKeys("shirts");
-		//element.click();
+		  element.sendKeys("tshirts");
+		 // WebElement element2  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/div[1]/div/ul/li[1]/div/div/div/span"));
+	     // element2.click();
 	} 
-	
-	/*@Test (priority=4)
-	void search2()
-	{
-		WebElement element;
-		element=driver.findElement(By.id("search"));
-		element.sendKeys("shirts");
-		
-	}
-	*/
-	   
-}
+	 @Test (priority =4)
+	 void select_item()
+	 {////*[@id="tshirts"]
+	  ////*[@id="tshirts"]
+		 driver.navigate().to("https://www.thesouledstore.com/explore/t-shirts");
+		  WebElement element7;
+		  element7=driver.findElement(By.xpath("//*[@id=\"productlist-168334\"]/a"));
+		  element7.click();
+	 }
+	 @Test (priority=5)
+
+	 void buy_now()
+	 {
+		 try{
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/button"));
+			 //Since, no exception, so element is present
+			 System.out.println("Element present");
+			}
+			catch(NoSuchElementException e){
+			 //Element is not present
+			 System.out.println("Element not present");
+			}
+	 }
+	 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="souled.souled">
         <methods>
-          <include name="search"/>
+          <include name="select_item"/>
           <include name="configure"/>
         </methods>
       </class> <!-- souled.souled -->
