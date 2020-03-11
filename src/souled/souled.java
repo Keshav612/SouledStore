@@ -2,18 +2,16 @@ package souled;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.*;
-
 import java.util.NoSuchElementException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
-public class souled {
+public class souled
+{
 	WebDriver driver;
-	
 	@BeforeTest
 	void configure()
 	{
@@ -106,4 +104,49 @@ public class souled {
 			 System.out.println("Element not present");
 			}
 	 }
+	 //
+	 @Test (priority=8)
+	 void pro_des()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"headingTwo\"]/h5/a"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+			 //Since, no exception, so element is present
+			 System.out.println("Element present");
+		 }
+			catch(NoSuchElementException e)
+		 {
+			 //Element is not present
+			 System.out.println("Element not present");
+		 }
 	 }
+	 ////*[@id="collapseOne"]/div/p/b
+	 @Test (priority=9)
+	 void pro_material()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"collapseOne\"]/div/p/b"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+			 //Since, no exception, so element is present
+			 System.out.println("Element present");
+		}
+			catch(NoSuchElementException e){
+			 //Element is not present
+			 System.out.println("Element not present");
+		}
+	 }
+	 @Test (priority=10)
+	 void pro_detail()
+	 {
+		 try
+		 {
+			 driver.findElements(By.className("mb-0 accordianheading"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+			 //Since, no exception, so element is present
+			 System.out.println("Element present");
+		}
+			catch(NoSuchElementException e){
+			 //Element is not present
+			 System.out.println("Element not present");
+		}
+	 }
+	}
