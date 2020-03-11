@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="11" passed="9">
+<testng-results skipped="0" failed="2" ignored="0" total="13" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100205" started-at="2020-03-11T14:15:18 IST" finished-at="2020-03-11T14:16:58 IST">
+  <suite name="Default suite" duration-ms="34412" started-at="2020-03-11T14:31:10 IST" finished-at="2020-03-11T14:31:45 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="100205" started-at="2020-03-11T14:15:18 IST" finished-at="2020-03-11T14:16:58 IST">
+    <test name="Default test" duration-ms="34412" started-at="2020-03-11T14:31:10 IST" finished-at="2020-03-11T14:31:45 IST">
       <class name="souled.souled">
-        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@6c3708b3]" name="configure" is-config="true" duration-ms="61856" started-at="2020-03-11T14:15:18 IST" finished-at="2020-03-11T14:16:20 IST">
+        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@6c3708b3]" name="configure" is-config="true" duration-ms="16232" started-at="2020-03-11T14:31:10 IST" finished-at="2020-03-11T14:31:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@6c3708b3]" name="login_btn" duration-ms="439" started-at="2020-03-11T14:16:20 IST" finished-at="2020-03-11T14:16:20 IST">
+        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@6c3708b3]" name="login_btn" duration-ms="188" started-at="2020-03-11T14:31:27 IST" finished-at="2020-03-11T14:31:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_btn -->
-        <test-method status="FAIL" signature="login()[pri:1, instance:souled.souled@6c3708b3]" name="login" duration-ms="498" started-at="2020-03-11T14:16:20 IST" finished-at="2020-03-11T14:16:21 IST">
+        <test-method status="FAIL" signature="login()[pri:1, instance:souled.souled@6c3708b3]" name="login" duration-ms="46" started-at="2020-03-11T14:31:27 IST" finished-at="2020-03-11T14:31:27 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".form\-control"}
@@ -24,8 +24,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LAPTOP-F6E9TQVT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e8c967536999efc712bd4a5b654777f9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6d344c8fb75d75eee464a43160c0a27
 *** Element info: {Using=class name, value=form-control}]]>
             </message>
             <full-stacktrace>
@@ -35,8 +35,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LAPTOP-F6E9TQVT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e8c967536999efc712bd4a5b654777f9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6d344c8fb75d75eee464a43160c0a27
 *** Element info: {Using=class name, value=form-control}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -87,7 +87,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="login_pass()[pri:2, instance:souled.souled@6c3708b3]" name="login_pass" duration-ms="620" started-at="2020-03-11T14:16:21 IST" finished-at="2020-03-11T14:16:22 IST">
+        <test-method status="FAIL" signature="login_pass()[pri:2, instance:souled.souled@6c3708b3]" name="login_pass" duration-ms="20" started-at="2020-03-11T14:31:27 IST" finished-at="2020-03-11T14:31:27 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input"}
@@ -96,8 +96,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LAPTOP-F6E9TQVT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e8c967536999efc712bd4a5b654777f9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6d344c8fb75d75eee464a43160c0a27
 *** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input}]]>
             </message>
             <full-stacktrace>
@@ -107,8 +107,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LAPTOP-F6E9TQVT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e8c967536999efc712bd4a5b654777f9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53517}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a6d344c8fb75d75eee464a43160c0a27
 *** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -159,38 +159,46 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_pass -->
-        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@6c3708b3]" name="search" duration-ms="208" started-at="2020-03-11T14:16:22 IST" finished-at="2020-03-11T14:16:22 IST">
+        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@6c3708b3]" name="search" duration-ms="383" started-at="2020-03-11T14:31:27 IST" finished-at="2020-03-11T14:31:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@6c3708b3]" name="select_item" duration-ms="34663" started-at="2020-03-11T14:16:22 IST" finished-at="2020-03-11T14:16:56 IST">
+        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@6c3708b3]" name="select_item" duration-ms="13857" started-at="2020-03-11T14:31:27 IST" finished-at="2020-03-11T14:31:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_item -->
-        <test-method status="PASS" signature="add_to_cart()[pri:5, instance:souled.souled@6c3708b3]" name="add_to_cart" duration-ms="168" started-at="2020-03-11T14:16:56 IST" finished-at="2020-03-11T14:16:57 IST">
+        <test-method status="PASS" signature="add_to_cart()[pri:5, instance:souled.souled@6c3708b3]" name="add_to_cart" duration-ms="498" started-at="2020-03-11T14:31:41 IST" finished-at="2020-03-11T14:31:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_to_cart -->
-        <test-method status="PASS" signature="share()[pri:6, instance:souled.souled@6c3708b3]" name="share" duration-ms="1041" started-at="2020-03-11T14:16:57 IST" finished-at="2020-03-11T14:16:58 IST">
+        <test-method status="PASS" signature="share()[pri:6, instance:souled.souled@6c3708b3]" name="share" duration-ms="2804" started-at="2020-03-11T14:31:42 IST" finished-at="2020-03-11T14:31:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- share -->
-        <test-method status="PASS" signature="quantity()[pri:7, instance:souled.souled@6c3708b3]" name="quantity" duration-ms="105" started-at="2020-03-11T14:16:58 IST" finished-at="2020-03-11T14:16:58 IST">
+        <test-method status="PASS" signature="quantity()[pri:7, instance:souled.souled@6c3708b3]" name="quantity" duration-ms="128" started-at="2020-03-11T14:31:45 IST" finished-at="2020-03-11T14:31:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quantity -->
-        <test-method status="PASS" signature="pro_des()[pri:8, instance:souled.souled@6c3708b3]" name="pro_des" duration-ms="90" started-at="2020-03-11T14:16:58 IST" finished-at="2020-03-11T14:16:58 IST">
+        <test-method status="PASS" signature="pro_des()[pri:8, instance:souled.souled@6c3708b3]" name="pro_des" duration-ms="32" started-at="2020-03-11T14:31:45 IST" finished-at="2020-03-11T14:31:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_des -->
-        <test-method status="PASS" signature="pro_material()[pri:9, instance:souled.souled@6c3708b3]" name="pro_material" duration-ms="34" started-at="2020-03-11T14:16:58 IST" finished-at="2020-03-11T14:16:58 IST">
+        <test-method status="PASS" signature="pro_material()[pri:9, instance:souled.souled@6c3708b3]" name="pro_material" duration-ms="36" started-at="2020-03-11T14:31:45 IST" finished-at="2020-03-11T14:31:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_material -->
-        <test-method status="PASS" signature="pro_detail()[pri:10, instance:souled.souled@6c3708b3]" name="pro_detail" duration-ms="32" started-at="2020-03-11T14:16:58 IST" finished-at="2020-03-11T14:16:58 IST">
+        <test-method status="PASS" signature="pro_detail()[pri:10, instance:souled.souled@6c3708b3]" name="pro_detail" duration-ms="28" started-at="2020-03-11T14:31:45 IST" finished-at="2020-03-11T14:31:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_detail -->
+        <test-method status="PASS" signature="wash_care()[pri:11, instance:souled.souled@6c3708b3]" name="wash_care" duration-ms="21" started-at="2020-03-11T14:31:45 IST" finished-at="2020-03-11T14:31:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wash_care -->
+        <test-method status="PASS" signature="sizing()[pri:12, instance:souled.souled@6c3708b3]" name="sizing" duration-ms="20" started-at="2020-03-11T14:31:45 IST" finished-at="2020-03-11T14:31:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sizing -->
       </class> <!-- souled.souled -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
