@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\OxygeN\AppData\Local\Temp\testng-eclipse-1111368158\testng-customsuite.xml</span>
+                    <span>C:\Users\OxygeN\AppData\Local\Temp\testng-eclipse-960217680\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="souled.souled" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="souled.souled" hash-for-method="login_pass">login_pass</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">16 methods,   16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,7 +112,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="souled.souled" hash-for-method="del_time">del_time</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="souled.souled" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="souled.souled" hash-for-method="login_btn">login_btn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="souled.souled" hash-for-method="login_pass">login_pass</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -171,6 +167,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="souled.souled" hash-for-method="side_bar">side_bar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="souled.souled" hash-for-method="sizing">sizing</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -191,136 +192,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">souled.souled</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.form\-control&quot;}
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;LAPTOP-F6E9TQVT&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
-*** Element info: {Using=class name, value=form-control}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at souled.souled.login(souled.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login_pass">
-                  </a> <!-- login_pass -->
-                  <span class="method-name">login_pass</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input&quot;}
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;LAPTOP-F6E9TQVT&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
-*** Element info: {Using=xpath, value=//*[@id=&quot;app&quot;]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at souled.souled.login_pass(souled.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -343,9 +214,30 @@ Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="del_time">
+                  </a> <!-- del_time -->
+                  <span class="method-name">del_time</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="login_btn">
                   </a> <!-- login_btn -->
                   <span class="method-name">login_btn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_pass">
+                  </a> <!-- login_pass -->
+                  <span class="method-name">login_pass</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -399,6 +291,13 @@ Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="side_bar">
+                  </a> <!-- side_bar -->
+                  <span class="method-name">side_bar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="sizing">
                   </a> <!-- sizing -->
                   <span class="method-name">sizing</span>
@@ -416,7 +315,7 @@ Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\OxygeN\AppData\Local\Temp\testng-eclipse-1111368158\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\OxygeN\AppData\Local\Temp\testng-eclipse-960217680\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -465,68 +364,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(14);
+data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'select_item')
 data.setCell(0, 2, 'souled.souled')
-data.setCell(0, 3, 8173);
+data.setCell(0, 3, 11240);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'search')
+data.setCell(1, 1, 'share')
 data.setCell(1, 2, 'souled.souled')
-data.setCell(1, 3, 2067);
+data.setCell(1, 3, 1982);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'share')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'souled.souled')
-data.setCell(2, 3, 1254);
+data.setCell(2, 3, 548);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
+data.setCell(3, 1, 'login_pass')
 data.setCell(3, 2, 'souled.souled')
-data.setCell(3, 3, 208);
+data.setCell(3, 3, 288);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'add_to_cart')
+data.setCell(4, 1, 'login_btn')
 data.setCell(4, 2, 'souled.souled')
-data.setCell(4, 3, 182);
+data.setCell(4, 3, 250);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'login_btn')
+data.setCell(5, 1, 'search')
 data.setCell(5, 2, 'souled.souled')
-data.setCell(5, 3, 150);
+data.setCell(5, 3, 191);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'del_pro')
+data.setCell(6, 1, 'add_to_cart')
 data.setCell(6, 2, 'souled.souled')
-data.setCell(6, 3, 52);
+data.setCell(6, 3, 151);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'wash_care')
+data.setCell(7, 1, 'pro_des')
 data.setCell(7, 2, 'souled.souled')
-data.setCell(7, 3, 33);
+data.setCell(7, 3, 133);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'sizing')
+data.setCell(8, 1, 'del_pro')
 data.setCell(8, 2, 'souled.souled')
-data.setCell(8, 3, 32);
+data.setCell(8, 3, 98);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'pro_des')
+data.setCell(9, 1, 'pro_material')
 data.setCell(9, 2, 'souled.souled')
-data.setCell(9, 3, 28);
+data.setCell(9, 3, 67);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'pro_material')
+data.setCell(10, 1, 'quantity')
 data.setCell(10, 2, 'souled.souled')
-data.setCell(10, 3, 28);
+data.setCell(10, 3, 45);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'login_pass')
+data.setCell(11, 1, 'del_time')
 data.setCell(11, 2, 'souled.souled')
-data.setCell(11, 3, 28);
+data.setCell(11, 3, 41);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'pro_detail')
 data.setCell(12, 2, 'souled.souled')
-data.setCell(12, 3, 24);
+data.setCell(12, 3, 36);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'quantity')
+data.setCell(13, 1, 'wash_care')
 data.setCell(13, 2, 'souled.souled')
-data.setCell(13, 3, 20);
+data.setCell(13, 3, 28);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'sizing')
+data.setCell(14, 2, 'souled.souled')
+data.setCell(14, 3, 26);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'side_bar')
+data.setCell(15, 2, 'souled.souled')
+data.setCell(15, 3, 24);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -559,63 +466,67 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login_btn</span>
-                <span class="method-start">14462 ms</span>
+                <span class="method-start">21809 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">14626 ms</span>
+                <span class="method-start">22067 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login_pass</span>
-                <span class="method-start">14839 ms</span>
+                <span class="method-start">22617 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">search</span>
-                <span class="method-start">14872 ms</span>
+                <span class="method-start">22909 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">select_item</span>
-                <span class="method-start">16941 ms</span>
+                <span class="method-start">23102 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">add_to_cart</span>
-                <span class="method-start">25129 ms</span>
+                <span class="method-start">34347 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">share</span>
-                <span class="method-start">25322 ms</span>
+                <span class="method-start">34503 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">quantity</span>
-                <span class="method-start">26578 ms</span>
+                <span class="method-start">36487 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pro_des</span>
-                <span class="method-start">26600 ms</span>
+                <span class="method-start">36536 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pro_material</span>
-                <span class="method-start">26630 ms</span>
+                <span class="method-start">36673 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pro_detail</span>
-                <span class="method-start">26659 ms</span>
+                <span class="method-start">36742 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">wash_care</span>
-                <span class="method-start">26685 ms</span>
+                <span class="method-start">36780 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sizing</span>
-                <span class="method-start">26720 ms</span>
+                <span class="method-start">36810 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">del_pro</span>
-                <span class="method-start">26757 ms</span>
+                <span class="method-start">36838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">del_time</span>
+                <span class="method-start">36939 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">side_bar</span>
+                <span class="method-start">36982 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

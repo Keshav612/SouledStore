@@ -188,11 +188,25 @@ public class souled
 			 System.out.println("Element not present");
 		}
 	 }
+	 @Test (priority=14)
 	 void del_time()
 	 {
 		 try
 		 {
 			 driver.findElements(By.xpath("//*[@id=\"collapseOne\"]/div/p/div/b[4]"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+			 System.out.println("Element present");
+		}
+			catch(NoSuchElementException e){
+			
+			 System.out.println("Element not present");
+		}
+	 }
+	 @Test (priority=15)
+	 void side_bar()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/button/span"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
 			 System.out.println("Element present");
 		}
 			catch(NoSuchElementException e){

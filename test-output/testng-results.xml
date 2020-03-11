@@ -1,208 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="14" passed="12">
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26818" started-at="2020-03-11T14:54:39 IST" finished-at="2020-03-11T14:55:05 IST">
+  <suite name="Default suite" duration-ms="37017" started-at="2020-03-11T15:04:14 IST" finished-at="2020-03-11T15:04:51 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26818" started-at="2020-03-11T14:54:39 IST" finished-at="2020-03-11T14:55:05 IST">
+    <test name="Default test" duration-ms="37017" started-at="2020-03-11T15:04:14 IST" finished-at="2020-03-11T15:04:51 IST">
       <class name="souled.souled">
-        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@6c3708b3]" name="configure" is-config="true" duration-ms="14394" started-at="2020-03-11T14:54:39 IST" finished-at="2020-03-11T14:54:53 IST">
+        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@6f1fba17]" name="configure" is-config="true" duration-ms="21168" started-at="2020-03-11T15:04:14 IST" finished-at="2020-03-11T15:04:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@6c3708b3]" name="login_btn" duration-ms="150" started-at="2020-03-11T14:54:53 IST" finished-at="2020-03-11T14:54:53 IST">
+        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@6f1fba17]" name="login_btn" duration-ms="250" started-at="2020-03-11T15:04:36 IST" finished-at="2020-03-11T15:04:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_btn -->
-        <test-method status="FAIL" signature="login()[pri:1, instance:souled.souled@6c3708b3]" name="login" duration-ms="208" started-at="2020-03-11T14:54:53 IST" finished-at="2020-03-11T14:54:53 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".form\-control"}
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-F6E9TQVT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
-*** Element info: {Using=class name, value=form-control}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".form\-control"}
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-F6E9TQVT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
-*** Element info: {Using=class name, value=form-control}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at souled.souled.login(souled.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="login()[pri:1, instance:souled.souled@6f1fba17]" name="login" duration-ms="548" started-at="2020-03-11T15:04:36 IST" finished-at="2020-03-11T15:04:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="login_pass()[pri:2, instance:souled.souled@6c3708b3]" name="login_pass" duration-ms="28" started-at="2020-03-11T14:54:54 IST" finished-at="2020-03-11T14:54:54 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input"}
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-F6E9TQVT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input"}
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-F6E9TQVT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\OxygeN\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54466}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5fbd3af2139e2ab2aacdf1e4939852f9
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at souled.souled.login_pass(souled.java:44)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="login_pass()[pri:2, instance:souled.souled@6f1fba17]" name="login_pass" duration-ms="288" started-at="2020-03-11T15:04:36 IST" finished-at="2020-03-11T15:04:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_pass -->
-        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@6c3708b3]" name="search" duration-ms="2067" started-at="2020-03-11T14:54:54 IST" finished-at="2020-03-11T14:54:56 IST">
+        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@6f1fba17]" name="search" duration-ms="191" started-at="2020-03-11T15:04:37 IST" finished-at="2020-03-11T15:04:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@6c3708b3]" name="select_item" duration-ms="8173" started-at="2020-03-11T14:54:56 IST" finished-at="2020-03-11T14:55:04 IST">
+        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@6f1fba17]" name="select_item" duration-ms="11240" started-at="2020-03-11T15:04:37 IST" finished-at="2020-03-11T15:04:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_item -->
-        <test-method status="PASS" signature="add_to_cart()[pri:5, instance:souled.souled@6c3708b3]" name="add_to_cart" duration-ms="182" started-at="2020-03-11T14:55:04 IST" finished-at="2020-03-11T14:55:04 IST">
+        <test-method status="PASS" signature="add_to_cart()[pri:5, instance:souled.souled@6f1fba17]" name="add_to_cart" duration-ms="151" started-at="2020-03-11T15:04:48 IST" finished-at="2020-03-11T15:04:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_to_cart -->
-        <test-method status="PASS" signature="share()[pri:6, instance:souled.souled@6c3708b3]" name="share" duration-ms="1254" started-at="2020-03-11T14:55:04 IST" finished-at="2020-03-11T14:55:05 IST">
+        <test-method status="PASS" signature="share()[pri:6, instance:souled.souled@6f1fba17]" name="share" duration-ms="1982" started-at="2020-03-11T15:04:48 IST" finished-at="2020-03-11T15:04:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- share -->
-        <test-method status="PASS" signature="quantity()[pri:7, instance:souled.souled@6c3708b3]" name="quantity" duration-ms="20" started-at="2020-03-11T14:55:05 IST" finished-at="2020-03-11T14:55:05 IST">
+        <test-method status="PASS" signature="quantity()[pri:7, instance:souled.souled@6f1fba17]" name="quantity" duration-ms="45" started-at="2020-03-11T15:04:50 IST" finished-at="2020-03-11T15:04:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quantity -->
-        <test-method status="PASS" signature="pro_des()[pri:8, instance:souled.souled@6c3708b3]" name="pro_des" duration-ms="28" started-at="2020-03-11T14:55:05 IST" finished-at="2020-03-11T14:55:05 IST">
+        <test-method status="PASS" signature="pro_des()[pri:8, instance:souled.souled@6f1fba17]" name="pro_des" duration-ms="133" started-at="2020-03-11T15:04:50 IST" finished-at="2020-03-11T15:04:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_des -->
-        <test-method status="PASS" signature="pro_material()[pri:9, instance:souled.souled@6c3708b3]" name="pro_material" duration-ms="28" started-at="2020-03-11T14:55:05 IST" finished-at="2020-03-11T14:55:05 IST">
+        <test-method status="PASS" signature="pro_material()[pri:9, instance:souled.souled@6f1fba17]" name="pro_material" duration-ms="67" started-at="2020-03-11T15:04:50 IST" finished-at="2020-03-11T15:04:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_material -->
-        <test-method status="PASS" signature="pro_detail()[pri:10, instance:souled.souled@6c3708b3]" name="pro_detail" duration-ms="24" started-at="2020-03-11T14:55:05 IST" finished-at="2020-03-11T14:55:05 IST">
+        <test-method status="PASS" signature="pro_detail()[pri:10, instance:souled.souled@6f1fba17]" name="pro_detail" duration-ms="36" started-at="2020-03-11T15:04:50 IST" finished-at="2020-03-11T15:04:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_detail -->
-        <test-method status="PASS" signature="wash_care()[pri:11, instance:souled.souled@6c3708b3]" name="wash_care" duration-ms="33" started-at="2020-03-11T14:55:05 IST" finished-at="2020-03-11T14:55:05 IST">
+        <test-method status="PASS" signature="wash_care()[pri:11, instance:souled.souled@6f1fba17]" name="wash_care" duration-ms="28" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wash_care -->
-        <test-method status="PASS" signature="sizing()[pri:12, instance:souled.souled@6c3708b3]" name="sizing" duration-ms="32" started-at="2020-03-11T14:55:05 IST" finished-at="2020-03-11T14:55:05 IST">
+        <test-method status="PASS" signature="sizing()[pri:12, instance:souled.souled@6f1fba17]" name="sizing" duration-ms="26" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sizing -->
-        <test-method status="PASS" signature="del_pro()[pri:13, instance:souled.souled@6c3708b3]" name="del_pro" duration-ms="52" started-at="2020-03-11T14:55:05 IST" finished-at="2020-03-11T14:55:05 IST">
+        <test-method status="PASS" signature="del_pro()[pri:13, instance:souled.souled@6f1fba17]" name="del_pro" duration-ms="98" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- del_pro -->
+        <test-method status="PASS" signature="del_time()[pri:14, instance:souled.souled@6f1fba17]" name="del_time" duration-ms="41" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- del_time -->
+        <test-method status="PASS" signature="side_bar()[pri:15, instance:souled.souled@6f1fba17]" name="side_bar" duration-ms="24" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- side_bar -->
       </class> <!-- souled.souled -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
