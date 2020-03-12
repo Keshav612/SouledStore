@@ -265,6 +265,32 @@ public class souled
 			 System.out.println("Element not present");
 		}
 	 }
+	 @Test (priority=21)
+	 void cart_item_details()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[1]/div[2]/div"));
+			 try
+			 {
+				 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[1]/div[2]/div/div[1]/div[2]/div/div[1]/h5/a"));
+				 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[1]/div[2]/div/div[1]/div[2]/div/div[1]/div"));
+				 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[1]/div[2]/div/div[1]/div[2]/div/div[1]/div/div[1]"));
+				 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[1]/div[2]/div/div[1]/div[2]/div/div[1]/div/div[2]/select"));
+				 driver.findElements(By.xpath("//*[@id=\"c_0_up\"]/div[1]/div/button"));
+				 System.out.println("All elements presents");
+			 }
+			 catch(NoSuchElementException e)
+			 {
+				 System.out.println("Element not present");
+			 }
+			 System.out.println("Element present");
+		 }
+		 catch(NoSuchElementException e){
+			
+			 System.out.println("Element not present");
+		}
+	 }
 }
 	 
 	
