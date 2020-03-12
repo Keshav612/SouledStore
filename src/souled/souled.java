@@ -228,6 +228,17 @@ public class souled
 		 element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[4]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/button"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
 		 element.click();					  
 	 }
+	 @Test (priority=18)
+	 void gtc() throws InterruptedException
+	 {
+		 Thread.sleep(1000);
+		 WebElement element;
+		 element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[4]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/a"));//xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/a")
+		 
+		 Thread.sleep(1000);
+		// element=driver.findElement(By.xpath("//*[@id=\"navbarDropdownuser\"]"));//xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/a")
+		 element.click(); 
+	 }
 }
 	 
 	
