@@ -239,6 +239,19 @@ public class souled
 		// element=driver.findElement(By.xpath("//*[@id=\"navbarDropdownuser\"]"));//xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/a")
 		 element.click(); 
 	 }
+	 @Test (priority=19)
+	 void tot_payable()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[1]/div[1]/div[2]"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+			 System.out.println("Element present");
+		}
+			catch(NoSuchElementException e){
+			
+			 System.out.println("Element not present");
+		}
+	 }
 }
 	 
 	
