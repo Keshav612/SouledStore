@@ -252,6 +252,19 @@ public class souled
 			 System.out.println("Element not present");
 		}
 	 }
+	 @Test (priority=20)
+	 void no_of_items_cart()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[1]/div[1]/div[1]/div"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+			 System.out.println("Element present");
+		}
+			catch(NoSuchElementException e){
+			
+			 System.out.println("Element not present");
+		}
+	 }
 }
 	 
 	
