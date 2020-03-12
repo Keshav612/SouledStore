@@ -214,6 +214,20 @@ public class souled
 			 System.out.println("Element not present");
 		}
 	 }
+	 @Test (priority=16)
+	 void select_size()
+	 {
+		 WebElement element;
+		 element=driver.findElement(By.xpath("//*[@id=\"4\"]"));
+		 element.click();
+	 }
+	 @Test (priority=17)
+	 void addtc()
+	 {
+		 WebElement element;
+		 element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[4]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/button"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+		 element.click();					  
+	 }
 }
 	 
 	
