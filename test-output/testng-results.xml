@@ -2,76 +2,76 @@
 <testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37017" started-at="2020-03-11T15:04:14 IST" finished-at="2020-03-11T15:04:51 IST">
+  <suite name="Default suite" duration-ms="29373" started-at="2020-03-12T12:16:15 IST" finished-at="2020-03-12T12:16:44 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37017" started-at="2020-03-11T15:04:14 IST" finished-at="2020-03-11T15:04:51 IST">
+    <test name="Default test" duration-ms="29373" started-at="2020-03-12T12:16:15 IST" finished-at="2020-03-12T12:16:44 IST">
       <class name="souled.souled">
-        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@6f1fba17]" name="configure" is-config="true" duration-ms="21168" started-at="2020-03-11T15:04:14 IST" finished-at="2020-03-11T15:04:35 IST">
+        <test-method status="PASS" signature="configure()[pri:0, instance:souled.souled@6f1fba17]" name="configure" is-config="true" duration-ms="17344" started-at="2020-03-12T12:16:15 IST" finished-at="2020-03-12T12:16:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@6f1fba17]" name="login_btn" duration-ms="250" started-at="2020-03-11T15:04:36 IST" finished-at="2020-03-11T15:04:36 IST">
+        <test-method status="PASS" signature="login_btn()[pri:0, instance:souled.souled@6f1fba17]" name="login_btn" duration-ms="187" started-at="2020-03-12T12:16:32 IST" finished-at="2020-03-12T12:16:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_btn -->
-        <test-method status="PASS" signature="login()[pri:1, instance:souled.souled@6f1fba17]" name="login" duration-ms="548" started-at="2020-03-11T15:04:36 IST" finished-at="2020-03-11T15:04:36 IST">
+        <test-method status="PASS" signature="login()[pri:1, instance:souled.souled@6f1fba17]" name="login" duration-ms="1196" started-at="2020-03-12T12:16:32 IST" finished-at="2020-03-12T12:16:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="login_pass()[pri:2, instance:souled.souled@6f1fba17]" name="login_pass" duration-ms="288" started-at="2020-03-11T15:04:36 IST" finished-at="2020-03-11T15:04:37 IST">
+        <test-method status="PASS" signature="login_pass()[pri:2, instance:souled.souled@6f1fba17]" name="login_pass" duration-ms="296" started-at="2020-03-12T12:16:34 IST" finished-at="2020-03-12T12:16:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_pass -->
-        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@6f1fba17]" name="search" duration-ms="191" started-at="2020-03-11T15:04:37 IST" finished-at="2020-03-11T15:04:37 IST">
+        <test-method status="PASS" signature="search()[pri:3, instance:souled.souled@6f1fba17]" name="search" duration-ms="149" started-at="2020-03-12T12:16:34 IST" finished-at="2020-03-12T12:16:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@6f1fba17]" name="select_item" duration-ms="11240" started-at="2020-03-11T15:04:37 IST" finished-at="2020-03-11T15:04:48 IST">
+        <test-method status="PASS" signature="select_item()[pri:4, instance:souled.souled@6f1fba17]" name="select_item" duration-ms="8180" started-at="2020-03-12T12:16:34 IST" finished-at="2020-03-12T12:16:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_item -->
-        <test-method status="PASS" signature="add_to_cart()[pri:5, instance:souled.souled@6f1fba17]" name="add_to_cart" duration-ms="151" started-at="2020-03-11T15:04:48 IST" finished-at="2020-03-11T15:04:48 IST">
+        <test-method status="PASS" signature="add_to_cart()[pri:5, instance:souled.souled@6f1fba17]" name="add_to_cart" duration-ms="709" started-at="2020-03-12T12:16:42 IST" finished-at="2020-03-12T12:16:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_to_cart -->
-        <test-method status="PASS" signature="share()[pri:6, instance:souled.souled@6f1fba17]" name="share" duration-ms="1982" started-at="2020-03-11T15:04:48 IST" finished-at="2020-03-11T15:04:50 IST">
+        <test-method status="PASS" signature="share()[pri:6, instance:souled.souled@6f1fba17]" name="share" duration-ms="889" started-at="2020-03-12T12:16:43 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- share -->
-        <test-method status="PASS" signature="quantity()[pri:7, instance:souled.souled@6f1fba17]" name="quantity" duration-ms="45" started-at="2020-03-11T15:04:50 IST" finished-at="2020-03-11T15:04:50 IST">
+        <test-method status="PASS" signature="quantity()[pri:7, instance:souled.souled@6f1fba17]" name="quantity" duration-ms="38" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quantity -->
-        <test-method status="PASS" signature="pro_des()[pri:8, instance:souled.souled@6f1fba17]" name="pro_des" duration-ms="133" started-at="2020-03-11T15:04:50 IST" finished-at="2020-03-11T15:04:50 IST">
+        <test-method status="PASS" signature="pro_des()[pri:8, instance:souled.souled@6f1fba17]" name="pro_des" duration-ms="27" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_des -->
-        <test-method status="PASS" signature="pro_material()[pri:9, instance:souled.souled@6f1fba17]" name="pro_material" duration-ms="67" started-at="2020-03-11T15:04:50 IST" finished-at="2020-03-11T15:04:50 IST">
+        <test-method status="PASS" signature="pro_material()[pri:9, instance:souled.souled@6f1fba17]" name="pro_material" duration-ms="25" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_material -->
-        <test-method status="PASS" signature="pro_detail()[pri:10, instance:souled.souled@6f1fba17]" name="pro_detail" duration-ms="36" started-at="2020-03-11T15:04:50 IST" finished-at="2020-03-11T15:04:50 IST">
+        <test-method status="PASS" signature="pro_detail()[pri:10, instance:souled.souled@6f1fba17]" name="pro_detail" duration-ms="22" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pro_detail -->
-        <test-method status="PASS" signature="wash_care()[pri:11, instance:souled.souled@6f1fba17]" name="wash_care" duration-ms="28" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
+        <test-method status="PASS" signature="wash_care()[pri:11, instance:souled.souled@6f1fba17]" name="wash_care" duration-ms="79" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wash_care -->
-        <test-method status="PASS" signature="sizing()[pri:12, instance:souled.souled@6f1fba17]" name="sizing" duration-ms="26" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
+        <test-method status="PASS" signature="sizing()[pri:12, instance:souled.souled@6f1fba17]" name="sizing" duration-ms="24" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sizing -->
-        <test-method status="PASS" signature="del_pro()[pri:13, instance:souled.souled@6f1fba17]" name="del_pro" duration-ms="98" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
+        <test-method status="PASS" signature="del_pro()[pri:13, instance:souled.souled@6f1fba17]" name="del_pro" duration-ms="24" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- del_pro -->
-        <test-method status="PASS" signature="del_time()[pri:14, instance:souled.souled@6f1fba17]" name="del_time" duration-ms="41" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
+        <test-method status="PASS" signature="del_time()[pri:14, instance:souled.souled@6f1fba17]" name="del_time" duration-ms="34" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- del_time -->
-        <test-method status="PASS" signature="side_bar()[pri:15, instance:souled.souled@6f1fba17]" name="side_bar" duration-ms="24" started-at="2020-03-11T15:04:51 IST" finished-at="2020-03-11T15:04:51 IST">
+        <test-method status="PASS" signature="side_bar()[pri:15, instance:souled.souled@6f1fba17]" name="side_bar" duration-ms="25" started-at="2020-03-12T12:16:44 IST" finished-at="2020-03-12T12:16:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- side_bar -->
