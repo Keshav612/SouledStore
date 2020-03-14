@@ -3,12 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="souled.souled2">
+      <class name="souled.souled">
         <methods>
           <include name="gtc"/>
+          <include name="login_pass"/>
+          <include name="addtc"/>
+          <include name="login"/>
           <include name="configure"/>
         </methods>
-      </class> <!-- souled.souled2 -->
+      </class> <!-- souled.souled -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

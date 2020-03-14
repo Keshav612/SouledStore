@@ -291,6 +291,22 @@ public class souled
 			 System.out.println("Element not present");
 		}
 	 }
+	 @Test (priority=22)
+	 void coupon()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[2]/div/div[1]"));
+			 driver.findElements(By.id("couponcode"));
+			 driver.findElements(By.xpath("//*[@id=\"couponApply\"]"));
+			 System.out.println("Element present");
+		}
+			catch(NoSuchElementException e){
+			
+			 System.out.println("Element not present");
+		}
+	 }
+	 
 }
 	 
 	
