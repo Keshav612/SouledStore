@@ -306,6 +306,21 @@ public class souled
 			 System.out.println("Element not present");
 		}
 	 }
+	 @Test (priority=23)
+	 void billing_details()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[2]/div/div[4]/div[2]"));// cart total
+			
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[2]/div/div[4]/div[2]/ul/li[3]"));//gst ////*[@id="app"]/div/div[3]/div[2]/div[3]/div[2]/div/div[4]/div[2]/ul/li[4]
+			 System.out.println("Element present");
+		}
+			catch(NoSuchElementException e){
+			
+			 System.out.println("Element not present");
+		}
+	 }
 	 
 }
 	 
