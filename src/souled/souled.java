@@ -348,6 +348,20 @@ public class souled
 			 System.out.println("Element not present");
 		}
 	 }
+	 @Test (priority=26)
+	 void about()
+	 {
+		 try
+		 {
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/footer/div[1]/div[1]/div[2]"));
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/footer/div[1]/div[1]/div[2]/div/ul/li[1]/a"));
+			 System.out.println("Element present");
+		}
+			catch(NoSuchElementException e){
+			
+			 System.out.println("Element not present");
+		}
+	 }
 	 
 	 
 }
