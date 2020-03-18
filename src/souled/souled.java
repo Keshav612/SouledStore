@@ -381,6 +381,23 @@ public class souled
 		}
 	 }
 	 
+	////*[@id="listaddress"]/div/div/div
+		@Test (priority=28)
+		void address()
+		 {
+			 try
+			 {
+				 WebElement element;
+				 driver.findElements(By.xpath("//*[@id=\"listaddress\"]/div/div/div"));
+				 System.out.println("Element present");
+				 
+			}
+				catch(NoSuchElementException e){
+				
+				 System.out.println("Element not present");
+			}
+		 }
+	 
 }
 	 
 	
