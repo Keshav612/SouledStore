@@ -363,6 +363,23 @@ public class souled
 		}
 	 }
 	 
+	 @Test (priority=27)
+	 void place_order_btn()
+	 {
+		 try
+		 {
+			 WebElement element;
+			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[2]/div/div[6]/button"));
+			 System.out.println("Element present");
+			 element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div[3]/div[2]/div/div[6]/button"));
+			 element.click();
+			 
+		}
+			catch(NoSuchElementException e){
+			
+			 System.out.println("Element not present");
+		}
+	 }
 	 
 }
 	 
