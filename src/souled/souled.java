@@ -1,5 +1,4 @@
 package souled;
-import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.*;
 import java.util.NoSuchElementException;
@@ -8,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeTest;
 public class souled
 {
 	WebDriver driver;
@@ -426,6 +424,12 @@ public class souled
 				 System.out.println("Element not present");
 			}
 		 }
+		@AfterTest
+		void QuitBrowser()
+		{
+			
+			driver.quit();
+		}
 	 
 }
 	 
