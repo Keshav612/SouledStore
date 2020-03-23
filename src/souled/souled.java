@@ -412,6 +412,20 @@ public class souled
 				 System.out.println("Element not present");
 			}
 		 }
+		@Test (priority=30)
+		void con_to_pay()
+		 {
+			 try
+			 {
+				 WebElement element;
+				 driver.findElements(By.xpath("//*[@id=\"con_payment\"]"));
+				 System.out.println("Element present");		 
+			}
+				catch(NoSuchElementException e)
+			 {	
+				 System.out.println("Element not present");
+			}
+		 }
 	 
 }
 	 
