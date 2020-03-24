@@ -30,7 +30,7 @@ public class souled
 	  @Test(enabled=true)
 	    public void assertURL() 
 	  { 
-	    
+	    //
 	     driver.get("https://www.thesouledstore.com/");   
 	     String actualURL = driver.getCurrentUrl();
 	     System.out.println(actualURL);   
