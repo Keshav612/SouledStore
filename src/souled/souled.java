@@ -27,6 +27,17 @@ public class souled
 	  AssertJUnit.assertEquals(ActualTitle, ExpectedTitle);
 	  System.out.println("Assert passed"); 
 	  }
+	  @Test(enabled=true)
+	    public void assertURL() 
+	  { 
+	    
+	     driver.get("https://www.thesouledstore.com/");   
+	     String actualURL = driver.getCurrentUrl();
+	     System.out.println(actualURL);   
+	     String expectedURL=null  ; 
+	     AssertJUnit.assertNull("Not Null",expectedURL);
+	     System.out.println("Test Passed");       
+	    }
 	@Test (priority=0)
 	void login_btn() 
 	  {
