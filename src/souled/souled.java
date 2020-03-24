@@ -18,7 +18,15 @@ public class souled
 		driver=new ChromeDriver();
 		driver.navigate().to("https://www.thesouledstore.com/");
 	}
-	
+	  @BeforeTest 
+	  public void verifyTitle() {
+	  driver.get("https://www.thesouledstore.com"); 
+	  String ActualTitle=driver.getTitle();
+	  System.out.println(ActualTitle);
+	  String ExpectedTitle="Buy Men, Women t-shirts, joggers, jackets online at The Souled Store | The Souled Store";
+	  AssertJUnit.assertEquals(ActualTitle, ExpectedTitle);
+	  System.out.println("Assert passed"); 
+	  }
 	@Test (priority=0)
 	void login_btn() 
 	  {
