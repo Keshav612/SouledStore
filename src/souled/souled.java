@@ -10,15 +10,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class souled
 {
 	WebDriver driver;
-	@BeforeTest
+	@BeforeSuite (alwaysRun=true,enabled=true)
 	void configure()
 	{
-		String baseurl="https://www.thesouledstore.com/";//driver.navigate().to("https://www.amazon.in/");
+		String baseurl="https://www.thesouledstore.com/";
 		System.setProperty("webdriver.chrome.driver", "G:\\study\\SEM 6\\Test Automation\\chromedriver_win32\\chromedriver.exe");
 		driver=new ChromeDriver();
-		//obj.get(baseurl);
 		driver.navigate().to("https://www.thesouledstore.com/");
 	}
+	
 	@Test (priority=0)
 	void login_btn() 
 	  {
