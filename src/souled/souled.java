@@ -96,14 +96,14 @@ public class souled
 			 System.out.println("Element not present");
 			}
 	 }
-	 @Test (priority=6)
-	 void share()
+	 @Test (priority=6,enabled=false)
+	 void share_false()
 	 {
-		 try{
+		 try
+		 {
 			 driver.findElements(By.className("sharebtns f22"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
-			 //Since, no exception, so element is present
 			 System.out.println("Element present");
-			}
+		}
 			catch(NoSuchElementException e){
 			 //Element is not present
 			 System.out.println("Element not present");
