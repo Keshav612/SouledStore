@@ -50,17 +50,18 @@ public class souled
 	  {
 		  WebElement element;
 		  element=driver.findElement(By.className("form-control"));
-		  element.sendKeys("mkeshav1206@gmail.com");
+		  element.sendKeys("mkeshav126@gmail.com");
 		  element.submit(); 
 	  }
 	  //xpath("//*[@id=\"app\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input")
-	  @Test (priority=2)
-	  void login_pass() 
+	  @Test (priority=2,alwaysRun=true)
+	  void login_pass() throws InterruptedException 
 	  {
 		  WebElement element;
 		  element=driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input"));
 		  element.sendKeys("qwerty12");
 		  element.submit(); 
+		  Thread.sleep(10000);
 	  }
 	 @Test (priority=3)
 	void search()
