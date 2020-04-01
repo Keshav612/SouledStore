@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 
-public class souled2
+public class souled
 {
 	WebDriver driver;
 	@BeforeSuite (alwaysRun=true,enabled=true)
@@ -85,65 +85,85 @@ public class souled2
 		  Thread.sleep(10000);
 	  }
 	  
-	 @Test (priority=3)
-	void search() throws InterruptedException
-	{
-		  WebElement element;
-		  element=driver.findElement(By.id("search")); 
-		  element.sendKeys("tshirts");
-		 // WebElement element2  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/div[1]/div/ul/li[1]/div/div/div/span"));
-	     // element2.click();
-		  Thread.sleep(10000);
-	} 
-	 @Test (priority =4)
-	 void select_item()
-	 {////*[@id="tshirts"]
-	  ////*[@id="tshirts"]
-		 driver.navigate().to("https://www.thesouledstore.com/explore/t-shirts");
-		  WebElement element7;
-		  element7=driver.findElement(By.xpath("//*[@id=\"productlist-168334\"]/a"));
-		  element7.click();
-	 }
-	 @Test (priority=5)
-
-	 void add_to_cart()
-	 {
-		 try{
-			 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/button"));
-			 //Since, no exception, so element is present
-			 System.out.println("Element present");
-			}
-			catch(NoSuchElementException e){
-			 //Element is not present
-			 System.out.println("Element not present");
-			}
-	 }
-	 @Test (priority=6,enabled=false)
-	 void share_false()
-	 {
-		 try
+	  @Test (priority=3)
+		void search() throws InterruptedException
+		{
+			  WebElement element;
+			  element=driver.findElement(By.id("search")); 
+			  element.sendKeys("tshirts");
+			 // WebElement element2  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/div[1]/div/ul/li[1]/div/div/div/span"));
+		     // element2.click();
+			  Thread.sleep(10000);
+		} 
+		 
+		 @Test (priority =4)
+		 void select_item()
 		 {
-			 driver.findElements(By.className("sharebtns f22"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
-			 System.out.println("Element present");
-		}
-			catch(NoSuchElementException e){
-			 //Element is not present
-			 System.out.println("Element not present");
+			 ////*[@id="tshirts"]
+			 driver.navigate().to("https://www.thesouledstore.com/explore/t-shirts");
+			  WebElement element7;
+			  element7=driver.findElement(By.xpath("//*[@id=\"productlist-168334\"]/a"));
+			  element7.click();
+		 }
+		 
+		 @Test (priority=5)
+		 void add_to_cart()
+		 {
+			 try{
+				 driver.findElements(By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[6]/div/div/div/div/button"));
+				 //Since, no exception, so element is present
+				 System.out.println("Element present");
+				}
+				catch(NoSuchElementException e){
+				 //Element is not present
+				 System.out.println("Element not present");
+				}
+		 }
+		 
+		 @Test (priority=6)
+		 void share()
+		 {
+			 try
+			 {
+				 driver.findElements(By.className("sharebtns f22"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+				 //Since, no exception, so element is present
+				 System.out.println("Element present");
+				}
+				catch(NoSuchElementException e)//Element is not present
+			 {
+				 
+				 System.out.println("Element not present");
+				}
+		 }
+		 
+		 @Test (priority=6,enabled=false)
+		 void share_false()
+		 {
+			 try
+			 {
+				 driver.findElements(By.className("sharebtns f22"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+				 System.out.println("Element present");
 			}
-	 }
-	 @Test (priority=7)
-	 void quantity()
-	 {
-		 try{
-			 driver.findElements(By.className("fltdiv lh28"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
-			 //Since, no exception, so element is present
-			 System.out.println("Element present");
+				catch(NoSuchElementException e){
+				 //Element is not present
+				 System.out.println("Element not present");
+				}
+		 }
+		 
+		 @Test (priority=7)
+		 void quantity()
+		 {
+			 try
+			 {
+				 driver.findElements(By.className("fltdiv lh28"));//xpath("/html/body/div[1]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[7]/div/div[2]/div/span[1]/i")
+				 System.out.println("Element present");
 			}
-			catch(NoSuchElementException e){
-			 //Element is not present
-			 System.out.println("Element not present");
-			}
-	 }
+				catch(NoSuchElementException e)
+			 {
+				 System.out.println("Element not present");
+		     }
+		 }
+		 
 	 //
 	 @Test (priority=8)
 	 void pro_des()
