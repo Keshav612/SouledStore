@@ -1,5 +1,11 @@
 package souled;
+import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.annotations.*;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
@@ -7,7 +13,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-public class souled
+import org.testng.annotations.BeforeTest;
+
+public class souled2
 {
 	WebDriver driver;
 	@BeforeSuite (alwaysRun=true,enabled=true)
@@ -18,6 +26,8 @@ public class souled
 		driver=new ChromeDriver();
 		driver.navigate().to("https://www.thesouledstore.com/");
 	}
+
+	
 	  @BeforeTest 
 	  public void verifyTitle() {
 	  driver.get("https://www.thesouledstore.com"); 
@@ -27,10 +37,11 @@ public class souled
 	  AssertJUnit.assertEquals(ActualTitle, ExpectedTitle);
 	  System.out.println("Assert passed"); 
 	  }
+
 	  @Test(enabled=true)
 	    public void assertURL() 
 	  { 
-	    //
+	    
 	     driver.get("https://www.thesouledstore.com/");   
 	     String actualURL = driver.getCurrentUrl();
 	     System.out.println(actualURL);   
@@ -38,22 +49,32 @@ public class souled
 	     AssertJUnit.assertNull("Not Null",expectedURL);
 	     System.out.println("Test Passed");       
 	    }
+	  
 	@Test (priority=0)
-	void login_btn() 
+	void login_btn() throws InterruptedException 
 	  {
 		  WebElement element;
 		  element=driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/nav/div[1]/div/ul/li[2]/span/span"));
 		  element.click(); 
+		  Thread.sleep(10000);
 	  }
-	  @Test (priority=1) 
-	  void login() 
+	
+	@Test(dataProviderClass=Dataprovider_Common.class,dataProvider="multipletestsinasinglefile")
+	public void execution(String username,String password)
+	{
+		System.out.println("checking multiple data login");
+	}
+	
+	  @Test (priority=1,alwaysRun=true) 
+	  void login() throws InterruptedException 
 	  {
 		  WebElement element;
 		  element=driver.findElement(By.className("form-control"));
-		  element.sendKeys("mkeshav126@gmail.com");
-		  element.submit(); 
+		  element.sendKeys("mkeshav1206@gmail.com");
+		  element.submit();
+		  Thread.sleep(10000);
 	  }
-	  //xpath("//*[@id=\"app\"]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/form/div[2]/div/input")
+	  
 	  @Test (priority=2,alwaysRun=true)
 	  void login_pass() throws InterruptedException 
 	  {
@@ -63,15 +84,16 @@ public class souled
 		  element.submit(); 
 		  Thread.sleep(10000);
 	  }
+	  
 	 @Test (priority=3)
-	void search()
+	void search() throws InterruptedException
 	{
-		WebElement element;
-		
+		  WebElement element;
 		  element=driver.findElement(By.id("search")); 
 		  element.sendKeys("tshirts");
 		 // WebElement element2  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/div[1]/div/ul/li[1]/div/div/div/span"));
 	     // element2.click();
+		  Thread.sleep(10000);
 	} 
 	 @Test (priority =4)
 	 void select_item()
