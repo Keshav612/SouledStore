@@ -91,8 +91,8 @@ public class souled
 			  WebElement element;
 			  element=driver.findElement(By.id("search")); 
 			  element.sendKeys("tshirts");
-			 // WebElement element2  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/div[1]/div/ul/li[1]/div/div/div/span"));
-		     // element2.click();
+			  WebElement element2  = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/nav/div[1]/div/ul/li[1]/div/div/div/span"));
+		      element2.click();
 			  Thread.sleep(10000);
 		} 
 		 
@@ -100,7 +100,7 @@ public class souled
 		 void select_item()
 		 {
 			 ////*[@id="tshirts"]
-			 driver.navigate().to("https://www.thesouledstore.com/explore/t-shirts");
+			// driver.navigate().to("https://www.thesouledstore.com/explore/t-shirts");
 			  WebElement element7;
 			  element7=driver.findElement(By.xpath("//*[@id=\"productlist-168334\"]/a"));
 			  element7.click();
@@ -164,7 +164,7 @@ public class souled
 		     }
 		 }
 		 
-	 //
+	 //done till here
 	 @Test (priority=8)
 	 void pro_des()
 	 {
