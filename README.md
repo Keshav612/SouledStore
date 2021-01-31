@@ -1,6 +1,6 @@
 # SouledStore
 This is a test automation project which tests various parameters for an e-commerce website "www.thesouledstore.com".
-It tests features like:
+It tests various features among which major are:
 a)If login button is available and user can login or not.
 b)If register button is available and user can register or not.
 c)Whether the user can search a product.
