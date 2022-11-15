@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeTest;
 public class souled
 {
 	WebDriver driver;
-	@BeforeSuite (alwaysRun=true,enabled=true)
+	@BeforeSuite (alwaysRun=true,enabled=true)  // Test Annotation
 	void configure()
 	{
 		String baseurl="https://www.thesouledstore.com/";
